@@ -1,0 +1,14 @@
+/* line 1, ../sass/searchResults.scss */
+#search-results-display {
+  display: flex;
+  flex-flow: row wrap;
+  max-height: 800px;
+}
+/* line 6, ../sass/searchResults.scss */
+#search-results-display #right-col {
+  flex-grow: 3;
+}
+/* line 10, ../sass/searchResults.scss */
+#search-results-display #left-col {
+  flex-grow: 1;
+}

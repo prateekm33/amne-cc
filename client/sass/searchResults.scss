@@ -1,0 +1,14 @@
+#search-results-display {
+  display: flex;
+  flex-flow: row wrap;
+  max-height: 800px;
+
+  #right-col {
+    flex-grow: 3;
+  }
+
+  #left-col {
+    flex-grow: 1;
+  }
+
+}

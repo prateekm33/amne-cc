@@ -1,0 +1,12 @@
+{
+  "urls" : {
+    "search" : "/search",
+  },
+
+  "apis" : {
+    "google" : {
+      "nearby_search" : "https://maps.googleapis.com/maps/api/place/nearbysearch/json",
+      "key" : "YOUR_GOOGLE_API_KEY"
+    }
+  }
+}
