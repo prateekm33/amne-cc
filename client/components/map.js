@@ -69,7 +69,7 @@ class Map extends React.Component {
         {props.markers.map((marker, index) => {
           const parsedMarker = {
             position : marker.geometry.location,
-            key : marker.name,
+            key : marker.id,
             icon : marker.red ? '' : 'http://maps.google.com/mapfiles/ms/icons/blue-dot.png',
             defaultAnimation : 2
           }
@@ -82,10 +82,18 @@ class Map extends React.Component {
     ))
     return <GoogleMapWrapped 
             containerElement={
-              <div style={{ height: `100%`, width: `100%` }} />
+              <div style={{ 
+                height: `100%`, 
+                width: `100%`,
+                minHeight: `500px`
+              }} />
             }
             mapElement={
-              <div style={{ height: `100%`, width: `100%` }} />
+              <div style={{ 
+                height: `100%`, 
+                width: `100%`,
+                minHeight: `500px`
+              }} />
             }
             markers={this.state.markers} />
   }

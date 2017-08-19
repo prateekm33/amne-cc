@@ -67,17 +67,196 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   display: block;
 }
 
-/* line 1, ../sass/searchResults.scss */
+/* line 9, ../sass/screen.scss */
+#main-app-container {
+  padding: 20px;
+  margin-top: 50px;
+}
+
+/* line 14, ../sass/screen.scss */
+#search-container {
+  height: 40px;
+  margin-bottom: 20px;
+  padding: 5px;
+}
+/* line 19, ../sass/screen.scss */
+#search-container form {
+  display: flex;
+  flex-flow: row nowrap;
+  width: 100%;
+  justify-content: space-around;
+  height: 100%;
+}
+/* line 26, ../sass/screen.scss */
+#search-container form > * {
+  max-height: 100%;
+  margin: 0 5px;
+}
+/* line 31, ../sass/screen.scss */
+#search-container form input {
+  flex-grow: 2;
+  border-style: none;
+  border: 2px solid rgba(48, 48, 48, 0.7);
+  padding: 10px;
+  border-radius: 50px;
+}
+/* line 38, ../sass/screen.scss */
+#search-container form input:focus {
+  outline: none;
+}
+/* line 43, ../sass/screen.scss */
+#search-container form button#search {
+  flex-grow: 1;
+}
+
+/* line 50, ../sass/screen.scss */
+#initial-welcome-text {
+  text-align: center;
+  font-size: 1.7em;
+  margin-bottom: 20px;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  left: 0;
+  height: 60px;
+  background: white;
+  z-index: 200;
+}
+/* line 61, ../sass/screen.scss */
+#initial-welcome-text.scrolled {
+  box-shadow: 5px 5px 5px 0px #ececec;
+}
+
+/* line 66, ../sass/screen.scss */
 #search-results-display {
   display: flex;
-  flex-flow: row wrap;
-  max-height: 800px;
+  flex-flow: column-reverse;
 }
-/* line 6, ../sass/searchResults.scss */
-#search-results-display #right-col {
-  flex-grow: 3;
+@media (min-width: 800px) and (min-device-width: 600px) {
+  /* line 66, ../sass/screen.scss */
+  #search-results-display {
+    flex-flow: row nowrap;
+    max-height: 500px;
+  }
 }
-/* line 10, ../sass/searchResults.scss */
+/* line 75, ../sass/screen.scss */
 #search-results-display #left-col {
   flex-grow: 1;
+  margin-right: 10px;
+  overflow: scroll;
+  padding: 5px 15px;
+  max-height: 1000px;
+}
+@media (min-device-width: 600px) and (min-width: 800px) {
+  /* line 75, ../sass/screen.scss */
+  #search-results-display #left-col {
+    max-height: 100%;
+  }
+}
+/* line 85, ../sass/screen.scss */
+#search-results-display #left-col .search-result-container {
+  margin-bottom: 10px;
+  padding: 10px;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  height: 60px;
+  align-items: center;
+  border-bottom: 2px solid #00d4d5;
+}
+/* line 96, ../sass/screen.scss */
+#search-results-display #left-col::-webkit-scrollbar-track {
+  background: rgba(0, 210, 211, 0.1);
+}
+/* line 100, ../sass/screen.scss */
+#search-results-display #left-col::-webkit-scrollbar-thumb {
+  width: 10px;
+  background: #00d4d5;
+}
+/* line 105, ../sass/screen.scss */
+#search-results-display #left-col .result-rating {
+  color: #ca3c3c;
+  font-weight: bold;
+}
+/* line 109, ../sass/screen.scss */
+#search-results-display #left-col .no-rating {
+  color: grey;
+  font-style: italic;
+  font-size: 0.8rem;
+}
+/* line 115, ../sass/screen.scss */
+#search-results-display #left-col .search-result-meta {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: space-between;
+  height: 80%;
+}
+/* line 123, ../sass/screen.scss */
+#search-results-display #right-col {
+  flex-grow: 3;
+  border: 2px solid #303030;
+}
+
+/* line 129, ../sass/screen.scss */
+#initial-search-container-text {
+  text-align: center;
+  font-size: 1.5em;
+  font-style: italic;
+  color: #bdbcbc;
+}
+
+/* line 136, ../sass/screen.scss */
+button {
+  border-style: none;
+  border-radius: 50px;
+  cursor: pointer;
+}
+/* line 140, ../sass/screen.scss */
+button:focus {
+  outline: none;
+}
+
+/* line 145, ../sass/screen.scss */
+button.primary {
+  border: 2px solid #42f7ff;
+  background: white;
+  font-weight: bold;
+}
+/* line 149, ../sass/screen.scss */
+button.primary:hover {
+  background: #00d2d3;
+  border: 2px solid #0fbcbd;
+}
+
+/* line 155, ../sass/screen.scss */
+button.secondary {
+  min-height: 50%;
+  border-style: none;
+  background: white;
+}
+/* line 160, ../sass/screen.scss */
+button.secondary:hover {
+  font-weight: bold;
+}
+
+/* line 165, ../sass/screen.scss */
+.line-2 {
+  position: relative;
+}
+
+/* line 170, ../sass/screen.scss */
+.distance-score + .distance-hover {
+  display: none;
+  padding: 10px;
+  max-width: 200px;
+  position: absolute;
+  background: white;
+  z-index: 200;
+  font-size: 0.8em;
+  color: grey;
+  box-shadow: 1px 1px 1px 1px #303030;
+}
+/* line 183, ../sass/screen.scss */
+.distance-score:hover + .distance-hover {
+  display: flex;
 }

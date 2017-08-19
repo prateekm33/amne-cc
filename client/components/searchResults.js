@@ -24,14 +24,14 @@ class SearchResults extends React.Component {
 
   renderSearchResults() {
     return this.props.data.map(
-      (i, idx) => <SearchResult data={i} key={`${i.key}-${idx}`}/>
+      (i, idx) => <SearchResult data={i} key={`${i.id}-${idx}`}/>
     );
   }
 
   renderNoDataDisplay() {
     return (
-      <div>
-        Go ahead and search for some REAs!
+      <div id='initial-search-container-text'>
+        No results to show
       </div>
     )
   }

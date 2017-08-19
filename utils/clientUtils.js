@@ -6,3 +6,7 @@ export function formatSearchData(data = {}) {
 
   return arr;
 }
+
+export function convertMetersToMiles(m) {
+  return Math.round(m / 0.000621371);
+}

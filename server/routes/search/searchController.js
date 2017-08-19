@@ -12,6 +12,7 @@ module.exports.fetchResults = (req, res) => {
     .then(results => {
       let allData = results.reduce((a,c) => a.concat(c.results), []);
       allData = new utils.LocationSet(allData);
+      allData = utils.sortByDistance(allData, locations);
       res.send(allData);
     })
     .catch(err => {

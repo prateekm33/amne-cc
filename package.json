@@ -6,7 +6,7 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "webpack --config ./webpack/build.js --watch",
     "start": "NODE_ENV=prod node server/server.js",
-    "start-dev": "NODE_ENV=dev node server/server.js",
+    "dev": "NODE_ENV=dev node server/server.js",
     "init": "npm install && npm run prod"
   },
   "keywords": [],

@@ -93,7 +93,7 @@ class Search extends React.Component {
         <form ref={el => this.formEl = el} onSubmit={this.handleSubmit}>
           <input placeholder="Address 1"/>
           <input placeholder="Address 2"/>
-          <button type="submit" value="">Search</button>
+          <button id="search" className="primary" type="submit" value="">Search</button>
         </form>
       </div>
     )
