@@ -3,9 +3,6 @@ const utils = require('../../../utils/serverUtils');
 const fetch = require('node-fetch');
 
 module.exports.fetchResults = (req, res) => {
-  console.log("NEED TO FETCH RESULTS....");
-  console.log(req.body);
-  
   const locations = req.body.addresses;
   const r = req.body.radius;
   Promise.all(locations.map(loc => queryResultsFor(loc, r)))

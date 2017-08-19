@@ -19,7 +19,6 @@ export function fetchSearchResults(addresses, radius = 16093.4) {
       }
     }).then(r => r.json())
     .then(result => {
-      console.log('search result....:', result);
       return dispatch(saveSearchResults(result));
     })
     .catch(e => {

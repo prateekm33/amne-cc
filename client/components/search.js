@@ -47,7 +47,6 @@ class Search extends React.Component {
     // if the form has been validated, then dispatch the call to make the query
     const addresses = this.getAddresses();
     Promise.all(addresses).then(locations => {
-      console.log('results : ', locations);
       this.props.dispatch(actions.fetchSearchResults(locations, /*can specify a radius here as the second argument if needed*/))
         .then(results => {
           this.props.dispatch(actions.searching(false));

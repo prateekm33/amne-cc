@@ -37,7 +37,6 @@ function pythagorean(a, b) {
 }
 
 function sortByDistance(data, locations) {
-  console.log(data)
   const first = locations[0].split(',');
   const second = locations[1].split(',');
   const copied = [];
