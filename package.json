@@ -39,5 +39,8 @@
     "redux-logger": "3.0.6",
     "webpack": "3.5.5",
     "webpack-merge": "4.1.0"
+  },
+  "devDependencies": {
+    "babel-plugin-transform-es2015-parameters": "^6.24.1"
   }
 }

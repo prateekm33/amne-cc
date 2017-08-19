@@ -70,7 +70,7 @@ class Map extends React.Component {
           const parsedMarker = {
             position : marker.geometry.location,
             key : marker.id,
-            icon : marker.red ? '' : 'http://maps.google.com/mapfiles/ms/icons/blue-dot.png',
+            icon : marker.red ? '' : 'https://maps.google.com/mapfiles/ms/icons/blue-dot.png',
             defaultAnimation : 2
           }
           return (<Marker
