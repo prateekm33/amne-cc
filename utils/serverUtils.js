@@ -51,21 +51,6 @@ function sortByDistance(data, locations) {
     console.log(agencies);
     return mergeSort(agencies, 'score');
   });
-
-  // const first = locations[0].split(',');
-  // const second = locations[1].split(',');
-  // const copied = [];
-
-  // for (let place in data) {
-  //   let c = data[place];
-  //   let loc = c.geometry.location;
-  //   let d1 = pythagorean(loc.lat - first[0], loc.lng - first[1]);
-  //   let d2 = pythagorean(loc.lat - second[0], loc.lng - second[1]);
-  //   c.score = d1 + d2;
-  //   copied.push(c);
-  // }
-
-  // return mergeSort(copied, 'score');
 }
 
 function saveScoreTo(agency, first, second) {
