@@ -31,5 +31,9 @@ module.exports = webpackMerge(require("./common.js"), {
     filename: "[name].bundle.js"
   },
 
-  plugins
+  plugins,
+
+  stats: {
+    warnings: process.env.NODE_ENV === 'production' ? false : 'true'
+  }
 });
