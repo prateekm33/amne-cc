@@ -49,7 +49,6 @@
 
 #initial-welcome-text {
   text-align: center;
-  font-size: 1.7em;
   margin-bottom: 20px;
   position: fixed;
   top: 0;
@@ -59,7 +58,7 @@
   background: white;
   z-index: 200;
   &.scrolled {
-    box-shadow: 5px 5px 5px 0px #ececec;
+    box-shadow: 5px 5px 5px 0px #847676;
   }
 }
 
@@ -90,7 +89,7 @@
       justify-content: space-between;
       height: 60px;
       align-items: center;
-      border-bottom: 2px solid #00d4d5;
+      border-bottom: 2px solid #323738;
     }    
 
     &::-webkit-scrollbar-track {
@@ -116,7 +115,7 @@
       display: flex;
       flex-flow: column nowrap;
       justify-content: space-between;
-      height: 80%;
+      height: 100%;
     }
   }
 
@@ -164,6 +163,10 @@ button.secondary {
 
 .line-2 {
   position: relative;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: space-between;
+  height: 100%;
 }
 
 .distance-score {
@@ -177,6 +180,7 @@ button.secondary {
     font-size: 0.8em;
     color: grey;
     box-shadow: 1px 1px 1px 1px #303030;
+    bottom: -30px;
   }
 
   &:hover {
@@ -184,4 +188,27 @@ button.secondary {
       display: flex;
     }
   }
+}
+
+#main-spinner {
+  display: flex;
+  justify-content: center;
+}
+
+
+.result-name {
+  color: #0bd8c2;
+  font-weight: bold;
+}
+
+.result-address {
+  color : #303030;
+}
+
+#logo {
+  position: absolute;
+  top: 25%;
+  left: 20px;
+  font-size: 1.3em;
+  font-weight: bold;
 }

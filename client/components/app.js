@@ -28,13 +28,18 @@ class App extends React.Component {
       <div>
         <div id='main-app-container'>
           <div ref={el => this.welcomeText = el} id="initial-welcome-text">
-            <div>Go ahead and search for some REAs!</div>
+            <div id='logo'>
+              <span style={{color: '#00d2d3'}}>R</span>
+              <span style={{color: '#11e6a3'}}>E</span>
+              <span style={{color: '#42f7ff'}}>A</span>
+              <span style={{color: 'rgba(54, 54, 54, 0.7)'}}>search</span>
+            </div>
           </div>
           <Search id="search-spinner"/>
           <div id='search-results-main-container'>
             {
               this.props.searching ? 
-                <Spinner /> :
+                <Spinner id="main-spinner"/> :
                 <SearchResults />
             }
           </div>

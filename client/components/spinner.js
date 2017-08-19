@@ -10,7 +10,7 @@ export default function Spinner(props) {
 
   return (
     <div id={props.id} className={classNames}>
-      spinner goes here...
+      <img src="../assets/spinner.gif"/>
     </div>
   )
 }

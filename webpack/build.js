@@ -6,6 +6,10 @@ const path = require('path');
 const plugins = []
 
 if (process.env.NODE_ENV === 'production'){
+  // uglify unfortunately does not support es6 just yet 
+  // so having issues with transpiling the code
+  // in the interest of time, this is not a high priority task to configure
+  
   // plugins.push(
   //   new webpack.optimize.UglifyJsPlugin({
   //     beautify: false,
