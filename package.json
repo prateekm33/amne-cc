@@ -10,7 +10,7 @@
     "init": "npm install && npm run prod",
     "heroku-postbuild": "npm run clean && npm run prod",
     "clean": "rm -rf client/dist",
-    "prod": "webpack --config ./webpack/webpack.build.js"
+    "prod": "webpack --config ./webpack/build.js"
   },
   "keywords": [],
   "author": "",
