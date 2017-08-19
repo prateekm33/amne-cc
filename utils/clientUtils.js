@@ -1,5 +1,4 @@
-export function formatSearchData(data) {
-  data = data || {};
+export function formatSearchData(data = {}) {
   const arr = [];
   for (let item in data) {
     arr.push(data[item]);
