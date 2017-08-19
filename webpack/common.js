@@ -31,8 +31,7 @@ module.exports = {
               presets: [
                 'es2015',
                 'react'
-              ],
-              plugins: [require("babel-plugin-transform-es2015-parameters")]
+              ]
             }
           }
         ]
