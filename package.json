@@ -7,7 +7,10 @@
     "build": "webpack --config ./webpack/build.js --watch",
     "start": "NODE_ENV=prod node server/server.js",
     "dev": "NODE_ENV=dev node server/server.js",
-    "init": "npm install && npm run prod"
+    "init": "npm install && npm run prod",
+    "heroku-postbuild": "npm run clean && npm run prod",
+    "clean": "rm -rf client/dist",
+    "prod": "webpack --config ./webpack/webpack.build.js"
   },
   "keywords": [],
   "author": "",
