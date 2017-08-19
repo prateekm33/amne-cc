@@ -8,5 +8,5 @@ export function formatSearchData(data = {}) {
 }
 
 export function convertMetersToMiles(m) {
-  return Math.round(m / 0.000621371);
+  return Math.round(m * 0.000621371);
 }

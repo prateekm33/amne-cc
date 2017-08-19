@@ -9,8 +9,10 @@ module.exports.fetchResults = (req, res) => {
     .then(results => {
       let allData = results.reduce((a,c) => a.concat(c.results), []);
       allData = new utils.LocationSet(allData);
-      allData = utils.sortByDistance(allData, locations);
-      res.send(allData);
+      // allData = utils.sortByDistance(allData, locations);
+      // res.send(allData);
+      utils.sortByDistance(allData, locations)
+        .then(data => res.send(data));
     })
     .catch(err => {
       console.log("[ERROR] ", err);
