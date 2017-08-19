@@ -8,8 +8,9 @@ let logger;
 switch (process.env.NODE_ENV) {
   case 'dev':
   case 'development':
-  default:
     logger = require('redux-logger').logger;
+    break;
+  default:
     break;
 }
 

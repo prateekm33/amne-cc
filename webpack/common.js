@@ -32,7 +32,7 @@ module.exports = {
                 'es2015',
                 'react'
               ],
-              plugins: ["transform-es2015-parameters"]
+              plugins: [require("babel-plugin-transform-es2015-parameters")]
             }
           }
         ]
