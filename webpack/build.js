@@ -10,19 +10,19 @@ if (process.env.NODE_ENV === 'production'){
   // so having issues with transpiling the code
   // in the interest of time, this is not a high priority task to configure
   
-  plugins.push(
-    new webpack.optimize.UglifyJsPlugin({
-      beautify: false,
-      mangle: {
-        screw_ie8: true,
-        keep_fnames: true
-      },
-      compress: {
-          screw_ie8: true
-      },
-      comments: false
-    })
-  )
+  // plugins.push(
+  //   new webpack.optimize.UglifyJsPlugin({
+  //     beautify: false,
+  //     mangle: {
+  //       screw_ie8: true,
+  //       keep_fnames: true
+  //     },
+  //     compress: {
+  //         screw_ie8: true
+  //     },
+  //     comments: false
+  //   })
+  // )
 }
 
 module.exports = webpackMerge(require("./common.js"), {
