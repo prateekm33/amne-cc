@@ -34,6 +34,6 @@ module.exports = webpackMerge(require("./common.js"), {
   plugins,
 
   stats: {
-    warnings: process.env.NODE_ENV === 'production' ? false : true
+    // warnings: process.env.NODE_ENV === 'production' ? false : true
   }
 });
