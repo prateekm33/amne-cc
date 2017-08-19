@@ -1,0 +1,14 @@
+{
+  "urls" : {
+    "search" : "/search"
+  },
+
+  "apis" : {
+    "google" : {
+      "nearby_search" : "https://maps.googleapis.com/maps/api/place/nearbysearch/json",
+      "maps": "https://maps.googleapis.com/maps/api/js",
+      "distanceMatrix": "https://maps.googleapis.com/maps/api/distancematrix/json",
+      "key" : "AIzaSyDHk0gOUkI2fBWRVKZvBkHA6HddMgS3_5c"
+    }
+  }
+}

@@ -2,7 +2,6 @@ import config from '../config/config.json';
 import types from './types';
 
 export function fetchSearchResults(addresses, radius = 16093.4) {
-  // TODO --- make request to backend web server for data
   return (dispatch, getState) => {
     dispatch(searching(true));
     dispatch(saveInputAddresses(addresses));
