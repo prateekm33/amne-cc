@@ -24,14 +24,14 @@ class Map extends React.Component {
         geometry : {
           location : { lat : +first[0], lng : +first[1] },
         },
-        name : 'Location 1',
+        id : 'Origin 1',
         red : true
       },
       {
         geometry : {
           location : { lat : +second[0], lng : +second[1]},
         },
-        name : 'Location 2',
+        id : 'Origin 2',
         red : true
       }
     ];
